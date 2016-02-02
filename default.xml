@@ -11,6 +11,9 @@
   <remote  name="cm"
            fetch="https://github.com/cyanogenmod/" />
 
+  <remote  name="np"
+           fetch="https://github.com/NoiseProject/" />
+
   <default revision="refs/tags/android-6.0.1_r13"
            remote="aosp"
            sync-j="4" />
