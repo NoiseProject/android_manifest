@@ -460,4 +460,9 @@
   <project path="vendor/ti" name="proprietary_vendor_ti" remote="np" revision="m" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="np" revision="m" />
 
+  <!-- bacon-specific projects -->
+  <project path="device/oneplus/bacon" name="android_device_oneplus_bacon" remote="np" revision="m" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="np" revision="m" />
+  <project path="kernel/oneplus/msm8974" name="android_kernel_oneplus_msm8974" remote="np" revision="m" /> 
+
 </manifest>
