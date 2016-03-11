@@ -5,8 +5,9 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <remote  name="slim"
-           fetch="https://github.com/slimroms/" />
+  <remote  name="du"
+           fetch="https://github.com/DirtyUnicorns/"
+           review="gerrit.dirtyunicorns.com" />
 
   <remote  name="cm"
            fetch="https://github.com/cyanogenmod/" />
@@ -33,24 +34,6 @@
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
-  <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
-  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
-  <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" />
-  <project path="device/generic/qemu" name="device/generic/qemu" />
-  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
-  <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
-  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
-  <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/android-mock" name="platform/external/android-mock" groups="pdk-cw-fs,pdk-fs" />
@@ -224,7 +207,6 @@
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
-  <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
@@ -294,20 +276,33 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
-  <project path="hardware/cyanogen" name="android_hardware_cyanogen" remote="cm" revision="cm-13.0" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
+  <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
+  <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
+  <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
+  <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" />
+  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel" />
+  <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" />
+  <project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" />
+  <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
+  <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
+  <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
+  <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
+  <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
+  <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
+  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
-  <project path="libcore" name="platform/libcore" groups="pdk" />
+  <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
+  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
+  <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
+  <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
+  <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
+  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="pdk,qcom_msm8x74" />
+  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
+  <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
+  <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
-  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" remote="aosp" />
-  <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" remote="aosp" />
-  <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" remote="aosp" />
-  <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" remote="aosp" />
-  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="pdk,qcom_msm8x74" remote="aosp" />
-  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
@@ -404,14 +399,9 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
-  <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -427,32 +417,6 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <!-- CyanogenMod -->
-  <project path="hardware/qcom/audio/default" remote="cm" revision="cm-13.0" name="android_hardware_qcom_audio" />
-  <project path="hardware/qcom/audio-caf/msm8974" remote="cm" name="android_hardware_qcom_audio" revision="cm-13.0-caf-8974" />
-  <project path="hardware/qcom/bt" remote="cm" revision="cm-13.0" name="android_hardware_qcom_bt" />
-  <project path="hardware/qcom/bt-caf" remote="cm" name="android_hardware_qcom_bt" groups="qcom" revision="cm-13.0-caf" />
-  <project path="hardware/qcom/camera" remote="cm" revision="cm-13.0" name="android_hardware_qcom_camera" groups="qcom" />
-  <project path="hardware/qcom/display" remote="cm" revision="cm-13.0" name="android_hardware_qcom_display" />
-  <project path="hardware/qcom/display-caf/msm8974" remote="cm" name="android_hardware_qcom_display" revision="cm-13.0-caf-8974" />
-  <project path="hardware/qcom/gps" remote="cm" revision="cm-13.0" name="android_hardware_qcom_gps" />
-  <project path="hardware/qcom/keymaster" remote="cm" revision="cm-13.0" name="android_hardware_qcom_keymaster" />
-  <project path="hardware/qcom/media/default" remote="cm" revision="cm-13.0" name="android_hardware_qcom_media" />
-  <project path="hardware/qcom/media-caf/msm8974" remote="cm" name="android_hardware_qcom_media" revision="cm-13.0-caf-8974" />
-  <project path="hardware/qcom/fm" remote="cm" revision="cm-13.0" name="android_hardware_qcom_fm" />
-  <project path="hardware/qcom/wlan" remote="cm" revision="cm-13.0" name="android_hardware_qcom_wlan" />
-  <project path="hardware/qcom/wlan-caf" remote="cm" name="android_hardware_qcom_wlan" revision="cm-13.0-caf" />
-  <project path="hardware/ril-caf" remote="cm" name="android_hardware_ril" revision="cm-13.0-caf" />
-  <project path="system/qcom" remote="cm" revision="cm-13.0" name="android_system_qcom" />
-  <project path="vendor/qcom/opensource/display-frameworks" remote="cm" revision="cm-13.0" name="android_vendor_qcom_opensource_display-frameworks" />
-  <project path="vendor/qcom/opensource/dpm" remote="cm" revision="cm-13.0" name="android_vendor_qcom_opensource_dpm" />
-  <project path="vendor/qcom/opensource/time-services" remote="cm" revision="cm-13.0" name="android_vendor_qcom_opensource_time-services" />
-  <project path="vendor/qcom/opensource/dataservices" revision="cm-13.0" name="android_vendor_qcom_opensource_dataservices" remote="cm" />
-
-
-  <!-- AOKP -->
-  <project path="vendor/cmsdk" name="AOKP/cm_platform_sdk" remote="aokp" revision="mm"/>
-
   <!-- Noise Project -->
   <!-- general -->
   <project path="manifest" name="android_manifest" remote="np" revision="m" />
@@ -463,8 +427,29 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="np" revision="m" groups="pdk" />
   <project path="hardware/ril" name="android_hardware_ril" remote="np" revision="m" groups="pdk" />
   <project path="system/core" name="android_system_core" remote="np" revision="m" groups="pdk" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="np" revision="m" />
+  <!-- DU general -->
+  <project path="external/sepolicy" name="android_external_sepolicy" remote="du" revision="m" />
+  <project path="libcore" name="android_libcore" remote="du" revision="m" />  <project path="system/bt" name="android_system_bt" remote="du" revision="m" />
+  <project path="system/core" name="android_system_core" remote="du" revision="m" />
+  <project path="system/extras" name="android_system_extras" remote="du" revision="m" />
+  <project path="system/media" name="android_system_media" remote="du" revision="m" />
+  <project path="system/netd" name="android_system_netd" remote="du" revision="m" />
+  <project path="system/vold" name="android_system_vold" remote="du" revision="m" />
 
+  <!--DU hardware-->
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="du" revision="m" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="du" revision="m" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="du" revision="m" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="du" revision="m" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="du" revision="m" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="du" revision="m" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="du" revision="m" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="du" revision="m" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="du" revision="m" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="du" revision="m" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="du" revision="m" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="m" />
+  <project path="hardware/ti/omap3" name="android_hardware_ti_omap3" remote="du" revision="m" />
 
   <!-- vendor -->
   <project path="vendor/np" name="android_vendor_np" remote="np" revision="m" />
