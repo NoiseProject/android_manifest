@@ -15,6 +15,9 @@
   <remote  name="aokp"
            fetch="https://github.com/AOKP/" />
 
+  <remote  name="slim"
+           fetch="https://github.com/slimroms/" />
+
   <remote  name="np"
            fetch="https://github.com/NoiseProject/" />
 
@@ -257,7 +260,6 @@
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="slim" revision="mm6.0" />
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
@@ -466,6 +468,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="np" revision="m" groups="pdk" />
   <project path="frameworks/native" name="android_frameworks_native" remote="np" revision="m" groups="pdk" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="np" revision="m" groups="pdk" />
+  <!--Slim framework-->
+  <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="slim" revision="mm6.0" />
 
   <!-- grouper-specific projects -->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="np" revision="m" />
