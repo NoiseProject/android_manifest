@@ -472,6 +472,7 @@
   <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="slim" revision="mm6.0" />
 
   <!-- grouper-specific projects -->
+  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="np" revision="m" />
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="np" revision="m" />
   <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="np" revision="m" />
   <project path="vendor/elan" name="proprietary_vendor_elan" remote="np" revision="m" />
@@ -490,4 +491,8 @@
   <project path="device/oneplus/bacon" name="android_device_oneplus_bacon" remote="np" revision="m" />
   <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="np" revision="m" />
 
+  <!-- hammerhead-specific projects -->
+  <project path="vendor/lg" name="proprietary_vendor_lg" remote="np" revision="m" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="np" revision="m" />
+  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="np" revision="m" />
 </manifest>
