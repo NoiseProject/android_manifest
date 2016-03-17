@@ -135,7 +135,6 @@
   <project path="frameworks/opt/bluetooth" name="TeamExodus/frameworks_opt_bluetooth" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
   <project path="frameworks/opt/chips" name="TeamExodus/frameworks_opt_chips" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
   <project path="frameworks/opt/datetimepicker" name="TeamExodus/frameworks_opt_datetimepicker" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/hardware" name="TeamExodus/frameworks_opt_hardware" remote="ex" revision="EXODUS-6.0" />
   <project path="frameworks/opt/net/ethernet" name="TeamExodus/frameworks_opt_net_ethernet" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
   <project path="frameworks/opt/net/ims" name="TeamExodus/frameworks_opt_net_ims" remote="ex" revision="EXODUS-6.0" groups="frameworks_ims,pdk-cw-fs,pdk-fs"  />
   <project path="frameworks/opt/net/wifi" name="TeamExodus/frameworks_opt_net_wifi" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
