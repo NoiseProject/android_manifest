@@ -154,7 +154,7 @@
   <project path="hardware/invensense" name="TeamExodus/hardware_invensense" remote="ex" revision="EXODUS-6.0" groups="invensense"  />
   <project path="hardware/libhardware_legacy" name="TeamExodus/hardware_libhardware_legacy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
   <project path="hardware/qcom/audio/default" name="TeamExodus/hardware_qcom_audio_default" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/apq8084" name="TeamExodus/hardware_qcom_audio-caf_apq8084" remote="ex" revision="EXODUS-6.0"groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/apq8084" name="TeamExodus/hardware_qcom_audio-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
   <project path="hardware/qcom/audio-caf/msm8916" name="TeamExodus/hardware_qcom_audio-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
   <project path="hardware/qcom/audio-caf/msm8960" name="TeamExodus/hardware_qcom_audio-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
   <project path="hardware/qcom/audio-caf/msm8974" name="TeamExodus/hardware_qcom_audio-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
