@@ -39,155 +39,155 @@
   <project path="hardware/ril" name="android_hardware_ril" remote="np" revision="m" groups="pdk" />
   <project path="system/core" name="android_system_core" remote="np" revision="m" groups="pdk" />
 
-  <project path="system/bt" name="TeamExodus/system_bt" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/extras" name="TeamExodus/system_extras" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/extras/su" name="TeamExodus/system_extras_su" remote="ex" revision="EXODUS-6.0" />
-  <project path="system/keymaster" name="TeamExodus/system_keymaster" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/media" name="TeamExodus/system_media" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/netd" name="TeamExodus/system_netd" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/qcom" name="TeamExodus/system_qcom" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="system/security" name="TeamExodus/system_security" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/vold" name="TeamExodus/system_vold" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/bt" name="system_bt" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/extras" name="system_extras" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/extras/su" name="system_extras_su" remote="ex" revision="EXODUS-6.0" />
+  <project path="system/keymaster" name="system_keymaster" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/media" name="system_media" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/netd" name="system_netd" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/qcom" name="system_qcom" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="system/security" name="system_security" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/vold" name="system_vold" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
 
-  <project path="cts" name="TeamExodus/cts" remote="ex" revision="EXODUS-6.0" groups="cts,pdk-cw-fs,pdk-fs" />
-  <project path="development" name="TeamExodus/development" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
+  <project path="cts" name="cts" remote="ex" revision="EXODUS-6.0" groups="cts,pdk-cw-fs,pdk-fs" />
+  <project path="development" name="development" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/qcom/sepolicy" name="Exodus-Devices/qcom_sepolicy" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/android/support-prebuilt" name="TeamExodus/external_android_support-prebuilt" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/android-clat" name="TeamExodus/external_android-clat" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/android-mock" name="TeamExodus/external_android-mock" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/android-visualizer" name="TeamExodus/external_android-visualizer" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/ant-wireless/ant_native" name="TeamExodus/external_ant-wireless_ant_native" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/ant-wireless/ant_service" name="TeamExodus/external_ant-wireless_ant_service" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/ant-wireless/antradio-library" name="TeamExodus/external_ant-wireless_antradio-library" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/apache-http" name="TeamExodus/external_apache-http" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/bash" name="TeamExodus/external_bash" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/boringssl" name="TeamExodus/external_boringssl" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/brctl" name="TeamExodus/external_brctl" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/busybox" name="TeamExodus/external_busybox" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/bzip2" name="TeamExodus/external_bzip2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/connectivity" name="TeamExodus/external_connectivity" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/curl" name="TeamExodus/external_curl" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/dhcpcd" name="TeamExodus/external_dhcpcd" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/e2fsprogs" name="TeamExodus/external_e2fsprogs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/ebtables" name="TeamExodus/external_ebtables" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/elfutils" name="TeamExodus/external_elfutils" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/exfat" name="TeamExodus/external_exfat" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/f2fs-tools" name="TeamExodus/external_f2fs-tools" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/ffmpeg" name="TeamExodus/external_ffmpeg" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/flac" name="TeamExodus/external_flac" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/fsck_msdos" name="TeamExodus/external_fsck_msdos" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/fuse" name="TeamExodus/external_fuse" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/gmock" name="TeamExodus/external_gmock" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/google" name="TeamExodus/external_google" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/gptfdisk" name="TeamExodus/external_gptfdisk" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
-  <project path="external/gson" name="TeamExodus/external_gson" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/guava" name="TeamExodus/external_guava" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/htop" name="TeamExodus/external_htop" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/icu" name="TeamExodus/external_icu" remote="ex" revision="EXODUS-6.0" groups="pdk" />
-  <project path="external/iproute2" name="TeamExodus/external_iproute2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/iptables" name="TeamExodus/external_iptables" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/jpeg" name="TeamExodus/external_jpeg" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/koush/AndroidAsync" name="TeamExodus/external_koush_AndroidAsync" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/koush/ion" name="TeamExodus/external_koush_ion" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libavc" name="TeamExodus/external_libavc" groups="pdk" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libncurses" name="TeamExodus/external_libncurses" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libnetfilter_conntrack" name="TeamExodus/external_libnetfilter_conntrack" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libnfc-nci" name="TeamExodus/external_libnfc-nci" remote="ex" revision="EXODUS-6.0" groups="pdk" />
-  <project path="external/libnfc-nxp" name="TeamExodus/external_libnfc-nxp" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/libnfnetlink" name="TeamExodus/external_libnfnetlink" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libphonenumbergoogle" name="TeamExodus/external_libphonenumbergoogle" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libtar" name="TeamExodus/external_libtar" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libtruezip" name="TeamExodus/external_libtruezip" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libusbx" name="TeamExodus/external_libusbx" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/libxml2" name="TeamExodus/external_libxml2" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs,libxml2"  />
-  <project path="external/libxslt" name="TeamExodus/external_libxslt" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/lzma" name="TeamExodus/external_lzma" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/lzo" name="TeamExodus/external_lzo" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/mksh" name="TeamExodus/external_mksh" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/mm-dash" name="TeamExodus/external_mm-dash" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/nano" name="TeamExodus/external_nano" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/ntfs-3g" name="TeamExodus/external_ntfs-3g" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/okhttp" name="TeamExodus/external_okhttp" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/p7zip" name="TeamExodus/external_p7zip" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/pigz" name="TeamExodus/external_pigz" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/powertop" name="TeamExodus/external_powertop" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/protobuf-c" name="TeamExodus/external_protobuf-c" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/rsync" name="TeamExodus/external_rsync" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/sepolicy" name="TeamExodus/external_sepolicy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/skia" name="TeamExodus/external_skia" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom_msm8x26"  />
-  <project path="external/sonivox" name="TeamExodus/external_sonivox" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/spongycastle" name="TeamExodus/external_spongycastle" groups="pdk" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/sqlite" name="TeamExodus/external_sqlite" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/stagefright-plugins" name="TeamExodus/external_stagefright-plugins" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/strace" name="TeamExodus/external_strace" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="external/tinycompress" name="TeamExodus/external_tinycompress" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/tinyalsa" name="TeamExodus/external_tinyalsa" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/tinyxml2" name="TeamExodus/external_tinyxml2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/toybox" name="TeamExodus/external_toybox" groups="pdk" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/unrar" name="TeamExodus/external_unrar" remote="ex" revision="EXODUS-6.0"  />
-  <project path="external/unzip" name="TeamExodus/external_unzip" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/vim" name="TeamExodus/external_vim" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/wpa_supplicant_8" name="TeamExodus/external_wpa_supplicant_8" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="external/yaffs2" name="TeamExodus/external_yaffs2" groups="pdk" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/zip" name="TeamExodus/external_zip" remote="ex" revision="EXODUS-6.0" />
-  <project path="external/zlib" name="TeamExodus/external_zlib" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="frameworks/minikin" name="TeamExodus/frameworks_minikin" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/bluetooth" name="TeamExodus/frameworks_opt_bluetooth" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/chips" name="TeamExodus/frameworks_opt_chips" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/datetimepicker" name="TeamExodus/frameworks_opt_datetimepicker" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/net/ethernet" name="TeamExodus/frameworks_opt_net_ethernet" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
-  <project path="frameworks/opt/net/ims" name="TeamExodus/frameworks_opt_net_ims" remote="ex" revision="EXODUS-6.0" groups="frameworks_ims,pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/net/wifi" name="TeamExodus/frameworks_opt_net_wifi" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="frameworks/opt/photoviewer" name="TeamExodus/frameworks_opt_photoviewer" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/opt/vcard" name="TeamExodus/frameworks_opt_vcard" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/rs" name="TeamExodus/frameworks_rs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="frameworks/support" name="TeamExodus/frameworks_support" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/webview" name="TeamExodus/frameworks_webview" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="frameworks/wilhelm" name="TeamExodus/frameworks_wilhelm" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
-  <project path="hardware/broadcom/libbt" name="TeamExodus/hardware_broadcom_libbt" groups="pdk" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/broadcom/wlan" name="TeamExodus/hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/cm" name="TeamExodus/hardware_cm" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/cyanogen" name="TeamExodus/hardware_cyanogen" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/intel/img/hwcomposer" name="TeamExodus/hardware_intel_img_hwcomposer" remote="ex" revision="EXODUS-6.0" groups="intel"  />
-  <project path="hardware/invensense" name="TeamExodus/hardware_invensense" remote="ex" revision="EXODUS-6.0" groups="invensense"  />
-  <project path="hardware/libhardware_legacy" name="TeamExodus/hardware_libhardware_legacy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="hardware/qcom/audio/default" name="TeamExodus/hardware_qcom_audio_default" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/apq8084" name="TeamExodus/hardware_qcom_audio-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/msm8916" name="TeamExodus/hardware_qcom_audio-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/msm8960" name="TeamExodus/hardware_qcom_audio-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/msm8974" name="TeamExodus/hardware_qcom_audio-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/audio-caf/msm8994" name="TeamExodus/hardware_qcom_audio-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
-  <project path="hardware/qcom/bt" name="TeamExodus/hardware_qcom_bt" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/bt-caf" name="TeamExodus/hardware_qcom_bt-caf" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/camera" name="TeamExodus/hardware_qcom_camera" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/display" name="TeamExodus/hardware_qcom_display" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/display-caf/apq8084" name="TeamExodus/hardware_qcom_display-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/display-caf/msm8916" name="TeamExodus/hardware_qcom_display-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/display-caf/msm8960" name="TeamExodus/hardware_qcom_display-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/display-caf/msm8974" name="TeamExodus/hardware_qcom_display-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/display-caf/msm8994" name="TeamExodus/hardware_qcom_display-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
-  <project path="hardware/qcom/gps" name="TeamExodus/hardware_qcom_gps" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_gps"  />
-  <project path="hardware/qcom/keymaster" name="TeamExodus/hardware_qcom_keymaster" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_keymaster"  />
-  <project path="hardware/qcom/media/default" name="TeamExodus/hardware_qcom_media_default" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/media-caf/apq8084" name="TeamExodus/hardware_qcom_media-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/media-caf/msm8916" name="TeamExodus/hardware_qcom_media-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/media-caf/msm8960" name="TeamExodus/hardware_qcom_media-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/media-caf/msm8974" name="TeamExodus/hardware_qcom_media-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/media-caf/msm8994" name="TeamExodus/hardware_qcom_media-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
-  <project path="hardware/qcom/wlan" name="TeamExodus/hardware_qcom_wlan" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
-  <project path="hardware/qcom/wlan-caf" name="TeamExodus/hardware_qcom_wlan-caf" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
-  <project path="hardware/ril-caf" name="TeamExodus/hardware_ril-caf" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="hardware/samsung_slsi/exynos5" name="TeamExodus/hardware_samsung_slsi_exynos5" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/ti/omap4" name="TeamExodus/hardware_ti_omap4" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/ti/wlan" name="TeamExodus/hardware_ti_wlan" remote="ex" revision="EXODUS-6.0" />
-  <project path="hardware/ti/wpan" name="TeamExodus/hardware_ti_wpan" remote="ex" revision="EXODUS-6.0" />
-  <project path="libcore" name="TeamExodus/libcore" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/android/support-prebuilt" name="external_android_support-prebuilt" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/android-clat" name="external_android-clat" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/android-mock" name="external_android-mock" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/android-visualizer" name="external_android-visualizer" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/apache-http" name="external_apache-http" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/bash" name="external_bash" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/boringssl" name="external_boringssl" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/brctl" name="external_brctl" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/busybox" name="external_busybox" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/bzip2" name="external_bzip2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/connectivity" name="external_connectivity" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/curl" name="external_curl" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/dhcpcd" name="external_dhcpcd" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/ebtables" name="external_ebtables" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/elfutils" name="external_elfutils" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/exfat" name="external_exfat" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/ffmpeg" name="external_ffmpeg" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/flac" name="external_flac" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/fsck_msdos" name="external_fsck_msdos" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/fuse" name="external_fuse" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/gmock" name="external_gmock" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/google" name="external_google" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
+  <project path="external/gson" name="external_gson" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/guava" name="external_guava" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/htop" name="external_htop" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/icu" name="external_icu" remote="ex" revision="EXODUS-6.0" groups="pdk" />
+  <project path="external/iproute2" name="external_iproute2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/iptables" name="external_iptables" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/jpeg" name="external_jpeg" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/koush/AndroidAsync" name="external_koush_AndroidAsync" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/koush/ion" name="external_koush_ion" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libavc" name="external_libavc" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libncurses" name="external_libncurses" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libnetfilter_conntrack" name="external_libnetfilter_conntrack" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libnfc-nci" name="external_libnfc-nci" remote="ex" revision="EXODUS-6.0" groups="pdk" />
+  <project path="external/libnfc-nxp" name="external_libnfc-nxp" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/libnfnetlink" name="external_libnfnetlink" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libphonenumbergoogle" name="external_libphonenumbergoogle" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libtar" name="external_libtar" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libtruezip" name="external_libtruezip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libusbx" name="external_libusbx" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libxml2" name="external_libxml2" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs,libxml2"  />
+  <project path="external/libxslt" name="external_libxslt" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/lzma" name="external_lzma" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/lzo" name="external_lzo" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/mksh" name="external_mksh" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/mm-dash" name="external_mm-dash" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/nano" name="external_nano" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ntfs-3g" name="external_ntfs-3g" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/okhttp" name="external_okhttp" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/p7zip" name="external_p7zip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/pigz" name="external_pigz" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/powertop" name="external_powertop" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/protobuf-c" name="external_protobuf-c" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/rsync" name="external_rsync" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/sepolicy" name="external_sepolicy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/skia" name="external_skia" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom_msm8x26"  />
+  <project path="external/sonivox" name="external_sonivox" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/spongycastle" name="external_spongycastle" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/sqlite" name="external_sqlite" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/strace" name="external_strace" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/tinycompress" name="external_tinycompress" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/tinyxml2" name="external_tinyxml2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/toybox" name="external_toybox" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/unrar" name="external_unrar" remote="ex" revision="EXODUS-6.0"  />
+  <project path="external/unzip" name="external_unzip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/vim" name="external_vim" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/yaffs2" name="external_yaffs2" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/zip" name="external_zip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/zlib" name="external_zlib" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/minikin" name="frameworks_minikin" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/bluetooth" name="frameworks_opt_bluetooth" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/chips" name="frameworks_opt_chips" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/datetimepicker" name="frameworks_opt_datetimepicker" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/net/ethernet" name="frameworks_opt_net_ethernet" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="ex" revision="EXODUS-6.0" groups="frameworks_ims,pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/opt/photoviewer" name="frameworks_opt_photoviewer" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/vcard" name="frameworks_opt_vcard" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/rs" name="frameworks_rs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/support" name="frameworks_support" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/webview" name="frameworks_webview" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/wilhelm" name="frameworks_wilhelm" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/cm" name="hardware_cm" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/cyanogen" name="hardware_cyanogen" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/intel/img/hwcomposer" name="hardware_intel_img_hwcomposer" remote="ex" revision="EXODUS-6.0" groups="intel"  />
+  <project path="hardware/invensense" name="hardware_invensense" remote="ex" revision="EXODUS-6.0" groups="invensense"  />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="hardware/qcom/audio/default" name="hardware_qcom_audio_default" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/apq8084" name="hardware_qcom_audio-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8916" name="hardware_qcom_audio-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8960" name="hardware_qcom_audio-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8994" name="hardware_qcom_audio-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/camera" name="hardware_qcom_camera" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/apq8084" name="hardware_qcom_display-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8974" name="hardware_qcom_display-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8994" name="hardware_qcom_display-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_gps"  />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_keymaster"  />
+  <project path="hardware/qcom/media/default" name="hardware_qcom_media_default" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/apq8084" name="hardware_qcom_media-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8960" name="hardware_qcom_media-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8994" name="hardware_qcom_media-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
+  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
+  <project path="hardware/ril-caf" name="hardware_ril-caf" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="hardware/samsung_slsi/exynos5" name="hardware_samsung_slsi_exynos5" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/omap4" name="hardware_ti_omap4" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/wlan" name="hardware_ti_wlan" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/wpan" name="hardware_ti_wpan" remote="ex" revision="EXODUS-6.0" />
+  <project path="libcore" name="libcore" groups="pdk" remote="ex" revision="EXODUS-6.0" />
 
   <!-- vendor -->
   <project path="vendor/np" name="android_vendor_np" remote="np" revision="m" />
-  <project path="vendor/qcom/opensource/display-frameworks" name="TeamExodus/vendor_qcom_opensource_display-frameworks"  />
-  <project path="vendor/qcom/opensource/dpm" name="TeamExodus/vendor_qcom_opensource_dpm"  />
-  <project path="vendor/qcom/opensource/time-services" name="TeamExodus/vendor_qcom_opensource_time-services"  />
+  <project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks"  />
+  <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm"  />
+  <project path="vendor/qcom/opensource/time-services" name="vendor_qcom_opensource_time-services"  />
 
 
   <!--packages-->
