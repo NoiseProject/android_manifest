@@ -18,12 +18,219 @@
   <remote  name="slim"
            fetch="https://github.com/slimroms/" />
 
+  <remote  name="ex"
+           fetch="https://github.com/TeamExodus/" />
+
   <remote  name="np"
            fetch="https://github.com/NoiseProject/" />
 
   <default revision="refs/tags/android-6.0.1_r22"
            remote="aosp"
            sync-j="4" />
+
+  <!-- Noise Project -->
+  <!-- general -->
+  <project path="manifest" name="android_manifest" remote="np" revision="m" />
+  <project path="build" name="android_build" remote="np" revision="m" >
+  <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="bionic" name="android_bionic" remote="np" revision="m" groups="pdk" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="np" revision="m" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="np" revision="m" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="np" revision="m" groups="pdk" />
+
+  <project path="system/bt" name="TeamExodus/system_bt" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/core" name="TeamExodus/system_core" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/extras" name="TeamExodus/system_extras" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/extras/su" name="TeamExodus/system_extras_su" remote="ex" revision="EXODUS-6.0" />
+  <project path="system/keymaster" name="TeamExodus/system_keymaster" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/media" name="TeamExodus/system_media" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/netd" name="TeamExodus/system_netd" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/qcom" name="TeamExodus/system_qcom" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="system/security" name="TeamExodus/system_security" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="system/vold" name="TeamExodus/system_vold" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+
+  <project path="cts" name="TeamExodus/cts" remote="ex" revision="EXODUS-6.0" groups="cts,pdk-cw-fs,pdk-fs" />
+  <project path="development" name="TeamExodus/development" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/qcom/sepolicy" name="Exodus-Devices/qcom_sepolicy" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/android/support-prebuilt" name="TeamExodus/external_android_support-prebuilt" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/android-clat" name="TeamExodus/external_android-clat" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/android-mock" name="TeamExodus/external_android-mock" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/android-visualizer" name="TeamExodus/external_android-visualizer" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/ant_native" name="TeamExodus/external_ant-wireless_ant_native" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/ant_service" name="TeamExodus/external_ant-wireless_ant_service" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ant-wireless/antradio-library" name="TeamExodus/external_ant-wireless_antradio-library" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/apache-http" name="TeamExodus/external_apache-http" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/bash" name="TeamExodus/external_bash" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/boringssl" name="TeamExodus/external_boringssl" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/brctl" name="TeamExodus/external_brctl" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/busybox" name="TeamExodus/external_busybox" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/bzip2" name="TeamExodus/external_bzip2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/connectivity" name="TeamExodus/external_connectivity" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/curl" name="TeamExodus/external_curl" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/dhcpcd" name="TeamExodus/external_dhcpcd" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/e2fsprogs" name="TeamExodus/external_e2fsprogs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/ebtables" name="TeamExodus/external_ebtables" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/elfutils" name="TeamExodus/external_elfutils" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/exfat" name="TeamExodus/external_exfat" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/f2fs-tools" name="TeamExodus/external_f2fs-tools" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/ffmpeg" name="TeamExodus/external_ffmpeg" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/flac" name="TeamExodus/external_flac" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/fsck_msdos" name="TeamExodus/external_fsck_msdos" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/fuse" name="TeamExodus/external_fuse" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/gmock" name="TeamExodus/external_gmock" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/google" name="TeamExodus/external_google" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/gptfdisk" name="TeamExodus/external_gptfdisk" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
+  <project path="external/gson" name="TeamExodus/external_gson" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/guava" name="TeamExodus/external_guava" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/htop" name="TeamExodus/external_htop" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/icu" name="TeamExodus/external_icu" remote="ex" revision="EXODUS-6.0" groups="pdk" />
+  <project path="external/iproute2" name="TeamExodus/external_iproute2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/iptables" name="TeamExodus/external_iptables" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/jpeg" name="TeamExodus/external_jpeg" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/koush/AndroidAsync" name="TeamExodus/external_koush_AndroidAsync" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/koush/ion" name="TeamExodus/external_koush_ion" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libavc" name="TeamExodus/external_libavc" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libncurses" name="TeamExodus/external_libncurses" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libnetfilter_conntrack" name="TeamExodus/external_libnetfilter_conntrack" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libnfc-nci" name="TeamExodus/external_libnfc-nci" remote="ex" revision="EXODUS-6.0" groups="pdk" />
+  <project path="external/libnfc-nxp" name="TeamExodus/external_libnfc-nxp" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/libnfnetlink" name="TeamExodus/external_libnfnetlink" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libphonenumbergoogle" name="TeamExodus/external_libphonenumbergoogle" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libtar" name="TeamExodus/external_libtar" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libtruezip" name="TeamExodus/external_libtruezip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libusbx" name="TeamExodus/external_libusbx" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/libxml2" name="TeamExodus/external_libxml2" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs,libxml2"  />
+  <project path="external/libxslt" name="TeamExodus/external_libxslt" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/lzma" name="TeamExodus/external_lzma" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/lzo" name="TeamExodus/external_lzo" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/mksh" name="TeamExodus/external_mksh" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/mm-dash" name="TeamExodus/external_mm-dash" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/nano" name="TeamExodus/external_nano" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/ntfs-3g" name="TeamExodus/external_ntfs-3g" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/okhttp" name="TeamExodus/external_okhttp" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/p7zip" name="TeamExodus/external_p7zip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/pigz" name="TeamExodus/external_pigz" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/powertop" name="TeamExodus/external_powertop" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/protobuf-c" name="TeamExodus/external_protobuf-c" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/rsync" name="TeamExodus/external_rsync" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/sepolicy" name="TeamExodus/external_sepolicy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/skia" name="TeamExodus/external_skia" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom_msm8x26"  />
+  <project path="external/sonivox" name="TeamExodus/external_sonivox" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/spongycastle" name="TeamExodus/external_spongycastle" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/sqlite" name="TeamExodus/external_sqlite" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/stagefright-plugins" name="TeamExodus/external_stagefright-plugins" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/strace" name="TeamExodus/external_strace" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="external/tinycompress" name="TeamExodus/external_tinycompress" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/tinyalsa" name="TeamExodus/external_tinyalsa" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/tinyxml2" name="TeamExodus/external_tinyxml2" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/toybox" name="TeamExodus/external_toybox" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/unrar" name="TeamExodus/external_unrar" remote="ex" revision="EXODUS-6.0"  />
+  <project path="external/unzip" name="TeamExodus/external_unzip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/vim" name="TeamExodus/external_vim" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/wpa_supplicant_8" name="TeamExodus/external_wpa_supplicant_8" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="external/yaffs2" name="TeamExodus/external_yaffs2" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/zip" name="TeamExodus/external_zip" remote="ex" revision="EXODUS-6.0" />
+  <project path="external/zlib" name="TeamExodus/external_zlib" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/minikin" name="TeamExodus/frameworks_minikin" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/bluetooth" name="TeamExodus/frameworks_opt_bluetooth" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/chips" name="TeamExodus/frameworks_opt_chips" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/datetimepicker" name="TeamExodus/frameworks_opt_datetimepicker" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/hardware" name="TeamExodus/frameworks_opt_hardware" remote="ex" revision="EXODUS-6.0" />
+  <project path="frameworks/opt/net/ethernet" name="TeamExodus/frameworks_opt_net_ethernet" remote="ex" revision="EXODUS-6.0" groups="pdk-fs"  />
+  <project path="frameworks/opt/net/ims" name="TeamExodus/frameworks_opt_net_ims" remote="ex" revision="EXODUS-6.0" groups="frameworks_ims,pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/net/wifi" name="TeamExodus/frameworks_opt_net_wifi" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/opt/photoviewer" name="TeamExodus/frameworks_opt_photoviewer" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/opt/vcard" name="TeamExodus/frameworks_opt_vcard" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/rs" name="TeamExodus/frameworks_rs" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="frameworks/support" name="TeamExodus/frameworks_support" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/webview" name="TeamExodus/frameworks_webview" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="frameworks/wilhelm" name="TeamExodus/frameworks_wilhelm" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
+  <project path="hardware/broadcom/libbt" name="TeamExodus/hardware_broadcom_libbt" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/broadcom/wlan" name="TeamExodus/hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/cm" name="TeamExodus/hardware_cm" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/cyanogen" name="TeamExodus/hardware_cyanogen" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/intel/img/hwcomposer" name="TeamExodus/hardware_intel_img_hwcomposer" remote="ex" revision="EXODUS-6.0" groups="intel"  />
+  <project path="hardware/invensense" name="TeamExodus/hardware_invensense" remote="ex" revision="EXODUS-6.0" groups="invensense"  />
+  <project path="hardware/libhardware_legacy" name="TeamExodus/hardware_libhardware_legacy" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="hardware/qcom/audio/default" name="TeamExodus/hardware_qcom_audio_default" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/apq8084" name="TeamExodus/hardware_qcom_audio-caf_apq8084" remote="ex" revision="EXODUS-6.0"groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8916" name="TeamExodus/hardware_qcom_audio-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8960" name="TeamExodus/hardware_qcom_audio-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8974" name="TeamExodus/hardware_qcom_audio-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/audio-caf/msm8994" name="TeamExodus/hardware_qcom_audio-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_audio"  />
+  <project path="hardware/qcom/bt" name="TeamExodus/hardware_qcom_bt" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/bt-caf" name="TeamExodus/hardware_qcom_bt-caf" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/camera" name="TeamExodus/hardware_qcom_camera" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/display" name="TeamExodus/hardware_qcom_display" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/apq8084" name="TeamExodus/hardware_qcom_display-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8916" name="TeamExodus/hardware_qcom_display-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8960" name="TeamExodus/hardware_qcom_display-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8974" name="TeamExodus/hardware_qcom_display-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/display-caf/msm8994" name="TeamExodus/hardware_qcom_display-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="pdk,qcom,qcom_display"  />
+  <project path="hardware/qcom/gps" name="TeamExodus/hardware_qcom_gps" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_gps"  />
+  <project path="hardware/qcom/keymaster" name="TeamExodus/hardware_qcom_keymaster" remote="ex" revision="EXODUS-6.0" groups="qcom,qcom_keymaster"  />
+  <project path="hardware/qcom/media/default" name="TeamExodus/hardware_qcom_media_default" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/apq8084" name="TeamExodus/hardware_qcom_media-caf_apq8084" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8916" name="TeamExodus/hardware_qcom_media-caf_msm8916" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8960" name="TeamExodus/hardware_qcom_media-caf_msm8960" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8974" name="TeamExodus/hardware_qcom_media-caf_msm8974" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/media-caf/msm8994" name="TeamExodus/hardware_qcom_media-caf_msm8994" remote="ex" revision="EXODUS-6.0" groups="qcom"  />
+  <project path="hardware/qcom/wlan" name="TeamExodus/hardware_qcom_wlan" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
+  <project path="hardware/qcom/wlan-caf" name="TeamExodus/hardware_qcom_wlan-caf" remote="ex" revision="EXODUS-6.0" groups="qcom_wlan"  />
+  <project path="hardware/ril-caf" name="TeamExodus/hardware_ril-caf" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
+  <project path="hardware/samsung_slsi/exynos5" name="TeamExodus/hardware_samsung_slsi_exynos5" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/omap4" name="TeamExodus/hardware_ti_omap4" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/wlan" name="TeamExodus/hardware_ti_wlan" remote="ex" revision="EXODUS-6.0" />
+  <project path="hardware/ti/wpan" name="TeamExodus/hardware_ti_wpan" remote="ex" revision="EXODUS-6.0" />
+  <project path="libcore" name="TeamExodus/libcore" groups="pdk" remote="ex" revision="EXODUS-6.0" />
+
+  <!-- vendor -->
+  <project path="vendor/np" name="android_vendor_np" remote="np" revision="m" />
+  <project path="vendor/qcom/opensource/display-frameworks" name="TeamExodus/vendor_qcom_opensource_display-frameworks"  />
+  <project path="vendor/qcom/opensource/dpm" name="TeamExodus/vendor_qcom_opensource_dpm"  />
+  <project path="vendor/qcom/opensource/time-services" name="TeamExodus/vendor_qcom_opensource_time-services"  />
+
+
+  <!--packages-->
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="np" revision="m" groups="pdk-fs" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="np" revision="m" groups="pdk-fs" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="np" revision="m" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="np" revision="m" groups="apps_nfc,pdk-fs" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="np" revision="m" groups="pdk-fs" />
+
+  <!--framework-->
+  <project path="frameworks/av" name="android_frameworks_av" remote="np" revision="m" groups="pdk"/>
+  <project path="frameworks/base" name="android_frameworks_base" remote="np" revision="m" groups="pdk" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="np" revision="m" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="np" revision="m" groups="pdk" />
+  <!--Slim framework-->
+  <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="slim" revision="mm6.0" />
+
+  <!-- grouper-specific projects -->
+  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="np" revision="m" />
+  <project path="vendor/asus" name="proprietary_vendor_asus" remote="np" revision="m" />
+  <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="np" revision="m" />
+  <project path="vendor/elan" name="proprietary_vendor_elan" remote="np" revision="m" />
+  <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="np" revision="m" />
+  <project path="vendor/nvidia" name="proprietary_vendor_nvidia" remote="np" revision="m" />
+  <project path="vendor/nxp" name="proprietary_vendor_nxp" remote="np" revision="m" />
+
+  <!-- tuna-specific projects -->
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="np" revision="m" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="np" revision="m" /> 
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="np" revision="m" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="np" revision="m" />
+  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="np" revision="m" />
+
+  <!-- bacon-specific projects -->
+  <project path="device/oneplus/bacon" name="android_device_oneplus_bacon" remote="np" revision="m" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="np" revision="m" />
+
+  <!-- hammerhead-specific projects -->
+  <project path="vendor/lg" name="proprietary_vendor_lg" remote="np" revision="m" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="np" revision="m" />
+  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="np" revision="m" />
 
   <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -32,27 +239,19 @@
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
-  <project path="developers/demos" name="platform/developers/demos" />
-  <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
-  <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/android-mock" name="platform/external/android-mock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/androidplot" name="platform/external/androidplot" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/apache-commons-math" name="platform/external/apache-commons-math" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/apache-http" name="platform/external/apache-http" groups="pdk" />
   <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/cblas" name="platform/external/cblas" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
@@ -65,31 +264,25 @@
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
   <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" />
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eigen" name="platform/external/eigen" groups="pdk" />
-  <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
   <project path="external/embunit" name="platform/external/embunit" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fio" name="platform/external/fio" groups="pdk-fs" />
-  <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk-fs" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
-  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
   <project path="external/google-breakpad" name="platform/external/google-breakpad" groups="dragon" />
@@ -98,16 +291,11 @@
   <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" groups="pdk-fs" />
-  <project path="external/gptfdisk" name="platform/external/gptfdisk" groups="pdk-fs" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
-  <project path="external/guava" name="platform/external/guava" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk-fs" />
-  <project path="external/icu" name="platform/external/icu" groups="pdk" />
-  <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/iptables" name="platform/external/iptables" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/iputils" name="platform/external/iputils" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jack" name="platform/external/jack" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jarjar" name="platform/external/jarjar" groups="pdk" />
@@ -120,7 +308,6 @@
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jmonkeyengine" name="platform/external/jmonkeyengine" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/jpeg" name="platform/external/jpeg" groups="pdk" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs,pdk-fs" />
@@ -128,7 +315,6 @@
   <project path="external/junit" name="platform/external/junit" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libavc" name="platform/external/libavc" groups="pdk" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
@@ -140,8 +326,6 @@
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" />
-  <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" />
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
@@ -159,7 +343,6 @@
   <project path="external/libvorbis" name="platform/external/libvorbis" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libxml2" name="platform/external/libxml2" groups="pdk-cw-fs,pdk-fs,libxml2" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
   <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" />
@@ -168,13 +351,11 @@
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk-fs" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs,pdk-fs" />
@@ -192,7 +373,6 @@
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/okhttp" name="platform/external/okhttp" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/opencv" name="platform/external/opencv" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/openfst" name="platform/external/openfst" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/openssh" name="platform/external/openssh" groups="pdk-cw-fs,pdk-fs" />
@@ -211,25 +391,17 @@
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
-  <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
-  <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
-  <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/v8" name="platform/external/v8" groups="pdk" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
@@ -238,10 +410,8 @@
   <project path="external/vogar" name="platform/external/vogar" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
@@ -249,34 +419,21 @@
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/mff" name="platform/frameworks/mff" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
-  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
-  <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
-  <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
@@ -288,11 +445,9 @@
   <project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel" />
   <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
   <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
-  <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
@@ -418,81 +573,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  <!-- END AOSP -->
 
-  <!-- Noise Project -->
-  <!-- general -->
-  <project path="manifest" name="android_manifest" remote="np" revision="m" />
-  <project path="build" name="android_build" remote="np" revision="m" >
-  <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="bionic" name="android_bionic" remote="np" revision="m" groups="pdk" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="np" revision="m" groups="pdk" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="np" revision="m" groups="pdk" />
-  <project path="system/core" name="android_system_core" remote="np" revision="m" groups="pdk" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="np" revision="m-caf" />
-  <!-- DU general -->
-  <project path="external/sepolicy" name="android_external_sepolicy" remote="du" revision="m" />
-  <project path="libcore" name="android_libcore" remote="du" revision="m" />  <project path="system/bt" name="android_system_bt" remote="du" revision="m" />
-  <project path="system/extras" name="android_system_extras" remote="du" revision="m" />
-  <project path="system/media" name="android_system_media" remote="du" revision="m" />
-  <project path="system/netd" name="android_system_netd" remote="du" revision="m" />
-  <project path="system/vold" name="android_system_vold" remote="du" revision="m" />
-
-  <!--DU hardware-->
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="du" revision="m" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="du" revision="m" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="du" revision="m" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="du" revision="m" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="du" revision="m" />
-  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="du" revision="m" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="du" revision="m" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="du" revision="m" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="du" revision="m" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="du" revision="m" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="du" revision="m" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="m" />
-  <project path="hardware/ti/omap3" name="android_hardware_ti_omap3" remote="du" revision="m" />
-
-  <!-- vendor -->
-  <project path="vendor/np" name="android_vendor_np" remote="np" revision="m" />
-
-  <!--packages-->
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="np" revision="m" groups="pdk-fs" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="np" revision="m" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="np" revision="m" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="np" revision="m" groups="apps_nfc,pdk-fs" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="np" revision="m" groups="pdk-fs" />
-
-  <!--framework-->
-  <project path="frameworks/av" name="android_frameworks_av" remote="np" revision="m" groups="pdk"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="np" revision="m" groups="pdk" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="np" revision="m" groups="pdk" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="np" revision="m" groups="pdk" />
-  <!--Slim framework-->
-  <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="slim" revision="mm6.0" />
-
-  <!-- grouper-specific projects -->
-  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="np" revision="m" />
-  <project path="vendor/asus" name="proprietary_vendor_asus" remote="np" revision="m" />
-  <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="np" revision="m" />
-  <project path="vendor/elan" name="proprietary_vendor_elan" remote="np" revision="m" />
-  <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="np" revision="m" />
-  <project path="vendor/nvidia" name="proprietary_vendor_nvidia" remote="np" revision="m" />
-  <project path="vendor/nxp" name="proprietary_vendor_nxp" remote="np" revision="m" />
-
-  <!-- tuna-specific projects -->
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="np" revision="m" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="np" revision="m" /> 
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="np" revision="m" />
-  <project path="vendor/ti" name="proprietary_vendor_ti" remote="np" revision="m" />
-  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="np" revision="m" />
-
-  <!-- bacon-specific projects -->
-  <project path="device/oneplus/bacon" name="android_device_oneplus_bacon" remote="np" revision="m" />
-  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="np" revision="m" />
-
-  <!-- hammerhead-specific projects -->
-  <project path="vendor/lg" name="proprietary_vendor_lg" remote="np" revision="m" />
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="np" revision="m" />
-  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="np" revision="m" />
 </manifest>
