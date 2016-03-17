@@ -40,7 +40,6 @@
   <project path="system/core" name="android_system_core" remote="np" revision="m" groups="pdk" />
 
   <project path="system/bt" name="TeamExodus/system_bt" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
-  <project path="system/core" name="TeamExodus/system_core" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
   <project path="system/extras" name="TeamExodus/system_extras" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
   <project path="system/extras/su" name="TeamExodus/system_extras_su" remote="ex" revision="EXODUS-6.0" />
   <project path="system/keymaster" name="TeamExodus/system_keymaster" remote="ex" revision="EXODUS-6.0" groups="pdk"  />
