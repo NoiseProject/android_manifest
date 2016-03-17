@@ -229,8 +229,8 @@
 
   <!-- hammerhead-specific projects -->
   <project path="vendor/lg" name="proprietary_vendor_lg" remote="np" revision="m" />
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="np" revision="m" />
-  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="np" revision="m" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="np" revision="m-ex" />
+  <project path="kernel/lge/hammerhead" name="kernel_lge_hammerhead" remote="np" revision="m" />
 
   <!-- AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
