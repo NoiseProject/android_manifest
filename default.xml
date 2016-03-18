@@ -54,7 +54,7 @@
 
   <project path="cts" name="cts" remote="ex" revision="EXODUS-6.0" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="development" name="development" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs" />
-  <project path="device/qcom/sepolicy" name="qcom_sepolicy" remote="ex" revision="EXODUS-6.0" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ex" revision="EXODUS-6.0" />
   <project path="external/android/support-prebuilt" name="external_android_support-prebuilt" remote="ex" revision="EXODUS-6.0" />
   <project path="external/android-clat" name="external_android-clat" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
   <project path="external/android-mock" name="external_android-mock" remote="ex" revision="EXODUS-6.0" groups="pdk-cw-fs,pdk-fs"  />
