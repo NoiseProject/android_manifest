@@ -48,7 +48,7 @@
 	  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="npd" groups="device,samsung,tuna" revision="aosp-7.0" />
 	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="stable" groups="omap4" />
 	  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="npd" revision="n" />
-	  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony-1" groups="pdk" remote="npd" revision="n" />	
+	  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony-1" groups="pdk" remote="np" revision="n" />	
 	  <project path="frameworks/native" name="android_frameworks_native-1" remote="npd" groups="pdk" revision="n" />
 	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="np" revision="n" />
 	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="np" revision="n" />
