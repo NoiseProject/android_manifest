@@ -42,6 +42,18 @@
 	  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="npd" revision="n" />
 	  <project path="device/asus/tilapia" name="android_device_asus_tilapia" remote="npd" revision="aosp-7.0" />
 
+	<!-- Maguro device and kernel -->
+	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
+	  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="npd" groups="kernel,samsung,tuna" revision="aosp-7.0" />
+	  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="npd" groups="device,samsung,tuna" revision="aosp-7.0" />
+	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="stable" groups="omap4" />
+	  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="npd" revision="n" />
+	  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony-1" groups="pdk" remote="npd" revision="n" />	
+	  <project path="frameworks/native" name="android_frameworks_native-1" remote="npd" groups="pdk" revision="n" />
+	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="npd" revision="n" />
+	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="npd" revision="n" />
+	  <project path="bionic" name="android_bionic-1" groups="pdk" remote="npd" revision="n" />
+
   <!-- Proprietary Vendors -->
   <project path="vendor/nexus" name="android_vendor_nexus" remote="np" revision="n" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="npd" revision="n" />
@@ -52,6 +64,8 @@
   <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="npd" revision="aosp-7.0" />
   <project path="vendor/nvidia" name="proprietary_vendor_nvidia" remote="npd" revision="aosp-7.0" />
   <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="npd" revision="aosp-7.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="npd" groups="vendor,samsung" revision="aosp-7.0" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="npd" groups="vendor,ti" revision="aosp-7.0" />
 
   <!-- AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -61,8 +75,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -326,7 +338,6 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -350,7 +361,6 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
@@ -398,7 +408,6 @@
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
