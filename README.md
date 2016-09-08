@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the Noise Project trees, use this command:
 
-    repo init -u https://github.com/NoiseProject/platform_manifest.git -b n
+    repo init -u https://github.com/NoiseProject/manifest.git -b n
 
 Then to sync up:
 
