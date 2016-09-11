@@ -14,7 +14,7 @@
   <remote name="npd"
            fetch="https://github.com/NoiseProjectDevices/" /> 
 
-  <default revision="refs/tags/android-7.0.0_r4"
+  <default revision="refs/tags/android-7.0.0_r6"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -40,14 +40,12 @@
 	<!-- Grouper device and kernel -->
 	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="master" />
 	  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="npd" revision="n" />
-	  <project path="device/asus/tilapia" name="android_device_asus_tilapia" remote="npd" revision="aosp-7.0" />
 
 	<!-- Maguro device and kernel -->
 	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
 	  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="npd" groups="kernel,samsung,tuna" revision="aosp-7.0" />
 	  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="npd" groups="device,samsung,tuna" revision="aosp-7.0" />
-	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="stable" groups="omap4" />
-	  <project path="hardware/ril" name="android_hardware_ril-1" groups="pdk" remote="np" revision="n" />
+	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="n" groups="omap4" />
 	  <project path="frameworks/native" name="android_frameworks_native-1" remote="np" groups="pdk" revision="n" />
 	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="np" revision="n" />
 	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="np" revision="n" />
@@ -407,6 +405,7 @@
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
+  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
