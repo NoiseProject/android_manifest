@@ -35,6 +35,7 @@
 
   <!-- NP Devices -->
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead" remote="npd" revision="n" />
+  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="npd" revision="n" />
 
   <!-- NP Devices Legacy-->
 	<!-- Grouper device and kernel -->
