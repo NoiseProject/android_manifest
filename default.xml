@@ -41,7 +41,8 @@
 	<!-- Grouper device and kernel -->
 	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="master" />
 	  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="npd" revision="n" />
-
+	  <project path="kernel/asus/grouper" name="android_kernel_asus_grouper" groups="kernel,asus,grouper" remote="npd" revision="n" />
+	
 	<!-- Maguro device and kernel -->
 	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
 	  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="npd" groups="kernel,samsung,tuna" revision="aosp-7.0" />
