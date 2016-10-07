@@ -47,9 +47,11 @@
 
   	  <project path="bionic" name="android_bionic-1" groups="pdk" remote="np" revision="n" />
 	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="np" revision="n" />
+	  <project path="external/stlport" name="android_external_stlport" remote="npd" groups="pdk" />
 	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="np" revision="n" />
 	  <project path="frameworks/native" name="android_frameworks_native-1" remote="np" groups="pdk" revision="n" />
 	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="n" groups="omap4" />
+      <project path="kernel/omap4/common" name="android_kernel_omap4_common" remote="npd" revision="n" groups="kernel" />
 
 	<!-- Grouper device and kernel -->
 	  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="npd" revision="n" />
