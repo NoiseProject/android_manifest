@@ -27,31 +27,37 @@
   <project path="art" name="android_art" groups="pdk" remote="np" revision="n" />
   <project path="external/busybox" name="android_external_busybox" remote="np" revision="n" />
   <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="np" revision="n" />
+  <project path="frameworks/base" name="android_frameworks_base-N" groups="pdk-cw-fs,pdk-fs" remote="np" revision="n" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="np" revision="n" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="np" revision="n" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="np" revision="n" />
-  <project path="frameworks/base" name="android_frameworks_base-N" groups="pdk-cw-fs,pdk-fs" remote="np" revision="n" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="np" revision="n" />
 
   <!-- NP Devices -->
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead" remote="npd" revision="n" />
+  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
+
   <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="npd" revision="n" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
 
   <!-- NP Devices Legacy-->
-	<!-- Grouper device and kernel -->
+	<!-- Legacy NP repo  -->
+	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
 	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="master" />
+
+  	  <project path="bionic" name="android_bionic-1" groups="pdk" remote="np" revision="n" />
+	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="np" revision="n" />
+	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="np" revision="n" />
+	  <project path="frameworks/native" name="android_frameworks_native-1" remote="np" groups="pdk" revision="n" />
+	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="n" groups="omap4" />
+
+	<!-- Grouper device and kernel -->
 	  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="npd" revision="n" />
 	  <project path="kernel/asus/grouper" name="android_kernel_asus_grouper" groups="kernel,asus,grouper" remote="npd" revision="n" />
 	
 	<!-- Maguro device and kernel -->
-	  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
 	  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="npd" groups="kernel,samsung,tuna" revision="aosp-7.0" />
 	  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="npd" groups="device,samsung,tuna" revision="aosp-7.0" />
-	  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="npd" revision="n" groups="omap4" />
-	  <project path="frameworks/native" name="android_frameworks_native-1" remote="np" groups="pdk" revision="n" />
-	  <project path="frameworks/av" name="android_frameworks_av-1" groups="pdk" remote="np" revision="n" />
-	  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="np" revision="n" />
-	  <project path="bionic" name="android_bionic-1" groups="pdk" remote="np" revision="n" />
 
   <!-- Proprietary Vendors -->
   <project path="vendor/nexus" name="android_vendor_nexus" remote="np" revision="n" />
@@ -88,8 +94,6 @@
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device" />
-  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
-  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu,broadcom_pdk" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
